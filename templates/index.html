@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trending Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 30px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .book {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            padding: 20px;
+            margin: 15px auto;
+            border-radius: 8px;
+            max-width: 700px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .book h2 {
+            margin-bottom: 10px;
+        }
+        .book p {
+            font-size: 14px;
+            color: #333;
+        }
+        .book a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .book a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>📚 Trending Books</h1>
+    {% for book in books %}
+    <div class="book">
+        <h2>{{ book.title }}</h2>
+        <p>{{ book.description }}</p>
+        <a href="{{ book.link }}" target="_blank">Read More</a>
+    </div>
+    {% endfor %}
+</body>
+</html>
