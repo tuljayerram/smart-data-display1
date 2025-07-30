@@ -13,3 +13,7 @@ This is a simple Flask app that fetches trending books from the Google Books API
 ```bash
 git clone https://github.com/tuljayerram/smart-data-display.git
 cd smart-data-display
+
+⭐️ If you cloned this repo and found it useful, please consider giving it a star! It helps more people find it.
+
+📝 Feedback? Open a discussion or issue — I'd love to hear from you!
